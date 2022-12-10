@@ -17,7 +17,7 @@ int main(void)
 			h = 48;
 			while (h < 58)
 			{
-				if ((i != j && i != h && j != h ) && (i < j && j < h))
+				if ((i != j && i != h && j != h) && (i < j && j < h))
 				{
 					putchar(i);
 					putchar(j);
