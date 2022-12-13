@@ -7,11 +7,10 @@
  */
 int main(void)
 {
-	char n[] = {'_', 'p', 'u', 't', 'c', 'h', 'a', 'r'};
+	char n[] = {'_', 'p', 'u', 't', 'c', 'h', 'a', 'r', '\n'};
 	int i;
 
-	for (i = 0; i < 8; i++)
+	for (i = 0; i < 9; i++)
 		_putchar(n[i]);
-	_putchar('\n');
 	return (0);
 }
