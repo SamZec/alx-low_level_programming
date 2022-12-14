@@ -20,15 +20,18 @@ void print_to_98(int n)
 				break;
 			printf(", ");
 		}
+		printf("\n");
 	}
 	else if (n > 98)
 	{
 		for (i = n; n >= 98; i--)
 		{
 			printf("%d", i);
-			_putchar(',');
+			if (i == 98)
+				break;
+			printf(", ");
 		}
-		_putchar('\n');
+		printf("\n");
 	}
 	else
 	{
