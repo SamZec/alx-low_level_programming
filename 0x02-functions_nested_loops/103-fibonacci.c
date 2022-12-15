@@ -7,13 +7,13 @@
  */
 int main(void)
 {
-	unsigned long int add, k, j, even;
+	int add, k, j, even;
 	int i;
 
 	add = even = k = 0;
 	j = 1;
 
-	for (i = 0; i <= 4000000; i++)
+	while (add <= 4000000)
 	{
 		add = k + j;
 		if (add % 2 == 0)
@@ -21,6 +21,6 @@ int main(void)
 		k = j;
 		j = add;
 	}
-	printf("%lu\n", even);
+	printf("%u\n", even);
 	return (0);
 }
