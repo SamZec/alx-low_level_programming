@@ -2,14 +2,15 @@
 
 /**
  * main - print first 50 Fibonacci numbers
- * 	  starting with 1 and 2
+ * 	starting with 1 and 2
  *
  * Return: Always 0 (success)
  */
 int main(void)
 {
 	int i;
-	unsigned long int add , j , k;
+	unsigned long int add, j, k;
+
 	i = add = j = 0;
 	k = 1;
 
