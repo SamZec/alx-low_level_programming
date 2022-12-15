@@ -8,7 +8,6 @@
 int main(void)
 {
 	int add, k, j, even;
-	int i;
 
 	add = even = k = 0;
 	j = 1;
