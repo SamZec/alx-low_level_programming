@@ -13,12 +13,16 @@
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	char *ptr;
+	unsigned index;
+	void *array;
 
 	if (nmemb <= 0 || size <= 0)
 		return (NULL);
-	ptr = malloc(nmemb * size);
-	if (ptr == NULL)
+	array = malloc(nmemb * size);
+	if (array == NULL)
 		return (NULL);
-	*ptr = 0;
+	ptr = array;
+	for (index = 0; index < (size * nmemb); index++)
+		ptr[index] = '\0';
 	return (ptr);
 }
