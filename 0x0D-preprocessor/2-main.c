@@ -9,6 +9,6 @@
  */
 int main(void)
 {
-	printf("%s", __BASE_FILE__);
+	printf("%s", __FILE__);
 	return (0);
 }
