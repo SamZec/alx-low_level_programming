@@ -2,15 +2,10 @@
 #define DOG_H
 
 /**
- * struct dog - define a new type struct dog
- * @name: 1st element
- * @age: 2nd element
- * @owner: 3rd element
- *
- * Description:  Define a new type struct dog with the following elements:
- *	name - takes the type char *
- *	age - takes the type float
- *	owner - takes the type char *
+ * struct dog - A new type describing a dog.
+ * @name: The name of the dog.
+ * @age: The age of the dog.
+ * @owner: The owner of the dog.
  */
 struct dog
 {
@@ -18,8 +13,15 @@ struct dog
 	float age;
 	char *owner;
 };
+
+/**
+ * dog_t - Typedef for struct dog
+ */
+typedef struct dog dog_t;
+
 void init_dog(struct dog *d, char *name, float age, char *owner);
 void print_dog(struct dog *d);
 dog_t *new_dog(char *name, float age, char *owner);
 void free_dog(dog_t *d);
-#endif /* DOG_H */
+
+#endif
