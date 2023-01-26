@@ -2,7 +2,7 @@
 #include <string.h>
 
 /**
- * add_node - adds a new node at the end of a list_t list.
+ * add_node_end - adds a new node at the end of a list_t list.
  * @head: pointer to first node in list_t list
  * @str: new node.
  *
@@ -10,37 +10,37 @@
  */
 list_t *add_node_end(list_t **head, const char *str)
 {
-	char *dup;
+	char *temp;
 	int len;
-	list_t *new, *last;
+	list_t *newnode, *temp1;
 
-	new = malloc(sizeof(list_t));
-	if (new == NULL)
+	newnode = malloc(sizeof(list_t));
+	if (newnode == NULL)
 		return (NULL);
 
-	dup = strdup(str);
+	temp = strdup(str);
 	if (str == NULL)
 	{
-		free(new);
+		free(newnode);
 		return (NULL);
 	}
 
 	for (len = 0; str[len];)
 		len++;
 
-	new->str = dup;
-	new->len = len;
-	new->next = NULL;
+	newnode->str = temp;
+	newnode->len = len;
+	newnode->next = NULL;
 
 	if (*head == NULL)
-		*head = new;
+		*head = newnode;
 
 	else
 	{
-		last = *head;
-		while (last->next != NULL)
-			last = last->next;
-		last->next = new;
+		temp1 = *head;
+		while (temp1->next != NULL)
+			temp1 = temp1->next;
+		temp1->next = newnode;
 	}
 
 	return (*head);
