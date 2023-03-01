@@ -21,8 +21,8 @@ int main(void)
 				l = 48;
 				while (l < 58)
 				{
-					chek1 = (i * 2) + j;
-					chek2 = (k * 2) + l;
+					chek1 = (i * 10) + j;
+					chek2 = (k * 10) + l;
 					if (chek1 < chek2)
 					{
 						putchar(i);
