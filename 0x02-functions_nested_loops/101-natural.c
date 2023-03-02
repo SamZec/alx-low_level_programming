@@ -1,21 +1,28 @@
-#include "main.h"
-#include <stdio.h>
-
+#include<stdio.h>
 /**
- * main - prints multiples of 3 and 5
+ * main - count multiple.
  *
- * Return: Always 0 (success)
+ * Return:void
  */
 int main(void)
 {
-	int i;
-	int sum;
+	int a, b, s, x, y;
 
-	for (i = 0; i < 1024; i++)
+	s = 0;
+	for (a = 0; a <= (1024  / 3); a++)
 	{
-		if (i % 3 == 0 || i % 5 == 0)
-			sum += i;
+		y = a * 3;
+		s = s + y;
 	}
-	printf("%d\n", sum);
+	for (b = 0; b < (1024 / 5); b++)
+	{
+		if (!(b % 3 == 0))
+		{
+			x = b * 5;
+			s = s + x;
+		}
+	}
+	printf("%i\n", s);
+
 	return (0);
 }
