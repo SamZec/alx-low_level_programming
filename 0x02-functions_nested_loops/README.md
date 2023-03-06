@@ -5,7 +5,7 @@ in C while practicing declaring and defining my own functions.
 
 ## Helper File :raised_hands:
 
-* [_putchar.c](./_putchar.c): C function that writes a character to `stdout`.
+* [_putchar.c](https://github.com/holbertonschool/_putchar.c/blob/master/_putchar.c): C function that writes a character to `stdout`.
 
 ## Header File :file_folder:
 
