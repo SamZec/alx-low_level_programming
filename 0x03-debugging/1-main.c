@@ -13,10 +13,10 @@ int main(void)
 
 	i = 0;
 	
-	 /* while (i < 0)*/
-	 /* {*/
+	 /*while (i < 0)*/
+	 /*{*/
 	 /*	putcahr(i);*/
-	 /* }*/
+	 /*}*/
 
 	printf("Infinite loop avoided! \\0/\n");
 
