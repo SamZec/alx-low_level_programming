@@ -25,7 +25,7 @@ void hash_table_print(const hash_table_t *ht)
 		{
 			if (last != 0)
 				printf(", ");
-			printf("'%s' : '%s'", hld->key, hld->value);
+			printf("'%s': '%s'", hld->key, hld->value);
 			last = 1;
 			hld = hld->next;
 		}
