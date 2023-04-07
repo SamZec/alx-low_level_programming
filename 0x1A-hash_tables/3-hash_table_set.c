@@ -4,7 +4,7 @@
 /**
  * hashes - insert node into a hash table at index
  *
- * @head: pointer to node at index
+ * @h_node: pointer to node at index
  * @key: is the key
  * @value: value associated with key
  *
