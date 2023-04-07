@@ -20,10 +20,10 @@ hash_table_t *hash_table_create(unsigned long int size)
 	if (_array == NULL)
 		return (NULL);
 
-	for (i = 0; i < size; i++)
+	for (i = 0; i < h_table->size; i++)
 		_array[i] = NULL;
 
-	h_table->array = array;
+	h_table->array = _array;
 	h_table->size = size;
 
 	return (h_table);
