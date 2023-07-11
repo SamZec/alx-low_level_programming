@@ -43,7 +43,7 @@ int binary_search(int *array, size_t size, int value)
 				n = right;
 			}
 			else
-				return mid;
+				return (mid);
 		}
 	}
 	return (-1);
