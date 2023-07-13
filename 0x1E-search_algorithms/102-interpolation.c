@@ -15,7 +15,7 @@ int interpolation_search(int *array, size_t size, int value)
 {
 	int low = 0, high = size - 1, point;
 
-	if (array != NULL)
+	if (array != NULL && size != 0)
 	{
 		while (array[high] != array[low] && value >= array[low] &&
 				value <= array[high])
